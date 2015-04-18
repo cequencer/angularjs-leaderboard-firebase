@@ -1,8 +1,5 @@
 var app = angular.module('leaderboard', ['firebase', 'ui.router']);
 
-<<<<<<< HEAD
-app.constant('FIREBASE_URI', 'https://uhack1.firebaseio.com');
-=======
 app.config(function($stateProvider, $urlRouterProvider){
   $urlRouterProvider.otherwise('/main');
 
@@ -15,14 +12,9 @@ app.config(function($stateProvider, $urlRouterProvider){
       url: '/admin',
       templateUrl: 'templates/admin.html'
     })
-    .state('remote', {
-      url: '/remote',
-      templateUrl: 'templates/remote.html'
-    })
 });
 
 app.constant('FIREBASE_URI', 'https://horse-race.firebaseio.com/');
->>>>>>> 93a84cc... added client side routing
 
 app.controller('MainCtrl', function (ContestantsService) {
     var main = this;
