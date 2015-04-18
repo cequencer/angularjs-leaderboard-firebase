@@ -1,7 +1,7 @@
 var app = angular.module('leaderboard', ['firebase', 'ui.router']);
 
 app.config(function($stateProvider, $urlRouterProvider){
-  $urlRouterProvider.otherwise('/main');
+  $urlRouterProvider.otherwise('/');
 
   $stateProvider
     .state('main', {
